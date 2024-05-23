@@ -1,0 +1,18 @@
+Google'ın otomatik tarayıcıları, Robot Hariç Tutma Protokolü'nü (REP) destekler. Yani Google'ın tarayıcıları, bir siteyi taramadan önce sitenin robots.txt dosyasını indirip ayrıştırarak sitenin hangi bölümlerinin taranabileceği bilgisine ulaşır. REP, Google'ın kullanıcılar tarafından yönetilen tarayıcılarına (örneğin, feed abonelikleri) veya kullanıcı güvenliğini artırmak için kullanılan tarayıcılara (örneğin, kötü amaçlı yazılım analizi) uygulanamaz.
+
+Bu sayfa, Google'ın REP'i nasıl yorumladığını açıklar. Protokolün orijinal taslağındaki standartlar için IETF Data Tracker'a göz atın. Robots.txt kullanmaya yeni başlıyorsanız önce Robots.txt dosyasına giriş sayfamızı inceleyin. Ayrıca robots.txt dosyası oluşturmayla ilgili ipuçlarından ve sık sorulan sorular ile yanıtlarını içeren kapsamlı bir listeden de faydalanabilirsiniz.
+Robots.txt dosyası nedir?
+Tarayıcıların sitenizin belirli bölümlerine erişmesini istemiyorsanız bunu sağlayacak kurallarla bir robots.txt dosyası oluşturabilirsiniz. Robots.txt dosyası, hangi tarayıcıların sitenizin hangi bölümlerine erişebileceğiyle ilgili kurallar içeren basit bir metin dosyasıdır. Örneğin, example.com için robots.txt dosyası aşağıdaki gibi görünebilir:
+
+
+# This robots.txt file controls crawling of URLs under https://example.com.
+# All crawlers are disallowed to crawl files in the "includes" directory, such
+# as .css, .js, but Googlebot needs them for rendering, so Googlebot is allowed
+# to crawl them.
+User-agent: *
+Disallow: /includes/
+
+User-agent: Googlebot
+Allow: /includes/
+
+Sitemap: https://example.com/sitemap.xml

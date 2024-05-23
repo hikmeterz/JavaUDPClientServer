@@ -1,0 +1,3 @@
+Robots.txt dosyasını, desteklenen bir protokol üzerinde sitenin en üst düzey dizinine yerleştirmelisiniz. Google Arama'nın desteklediği protokoller HTTP, HTTPS ve FTP'dir. Tarayıcılar, HTTP ve HTTPS üzerinde robots.txt dosyasını koşullu olmayan GET isteğiyle getirir, FTP'de ise anonim girişle standart RETR (RETRIEVE) komutunu kullanır.
+
+Robots.txt dosyasında listelenen kurallar, yalnızca robots.txt dosyasının barındırıldığı ana makine, protokol ve bağlantı noktası numarası için geçerlidir.

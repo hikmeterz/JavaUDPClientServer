@@ -1,0 +1,7 @@
+Googlebot adlı kullanıcı aracısının, http://example.com/nogooglebot/ ile başlayan hiçbir URL'yi taramasına izin verilmez.
+Diğer tüm kullanıcı aracılarının sitenin tamamını taramasına izin verilir. Varsayılan davranış, kullanıcı aracılarının sitenin tamamını taramasına izin verilmesi olduğundan bu durum belirtilmese dahi sonuç aynı olacaktır.
+Sitenin site haritası dosyası, http://www.example.com/sitemap.xml adresinde bulunmaktadır.
+Daha fazla örnek için söz dizimi bölümüne bakın.
+
+Robots.txt dosyası oluşturmak için temel kurallar
+Robots.txt dosyası oluşturup dosyanın genel olarak erişilebilir ve faydalı olmasını sağlamak için uygulayacağınız dört adım vardır:
